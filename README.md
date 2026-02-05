@@ -2,6 +2,14 @@
 
 A comprehensive **Codon Optimization and Bioinformatics Analysis Platform** for DNA sequence engineering and ATTATA promoter motif injection while preserving protein sequences.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_notebook.ipynb)
+[![GitHub](https://img.shields.io/badge/GitHub-r1gron9%2Fbiosec--toolkit-blue?logo=github&style=flat)](https://github.com/r1gron9/biosec-toolkit)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green?style=flat&logo=python)](https://www.python.org)
+
+## 🚀 Quick Start
+
+**No Installation Needed!** Click the "Open in Colab" button above to run everything in your browser.
+
 ## Overview
 
 **biosec-toolkit** is a Flask-based bioinformatics application that enables systematic analysis and optimization of DNA sequences. The software provides computational tools for:
@@ -429,6 +437,13 @@ pip install -r requirements.txt
 ```
 
 ### Running the Application
+
+#### Cloud: Google Colab (Recommended for beginners)
+Click the **"Open in Colab"** badge at the top - runs instantly in your browser with no setup!
+- No installation required
+- All packages pre-installed
+- Save results to Google Drive
+- Link: [colab_notebook.ipynb](queries/colab_notebook.ipynb)
 
 #### Web Interface (Flask)
 ```bash
