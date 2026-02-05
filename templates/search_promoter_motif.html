@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Promoter Motif In Full Genome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Search Promoter Motif In Full Genome</h1>
+    <div class="description-box">
+        <p>This tool tests whether the antisense promoter motif <strong>'TATAAT'</strong> exists within a list of genes.
+            You must upload:
+            <ul>
+                <li><strong>FASTA</strong> file: containing the nucleotide sequence.</li>
+                <li><strong>CSV</strong> file: containing gene locations with 'Start' and 'Stop' columns.</li>
+            </ul>
+        </p>
+    </div>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="fasta_file">Upload FASTA file:</label>
+        <input type="file" name="fasta_file" required>
+        <a href="{{ url_for('download_example_full_genome_fasta_route') }}" class="button">Download Example For Fasta File</a>
+        <br><br><br>
+        <label for="csv_file">Upload CSV file:</label>
+        <input type="file" name="csv_file" required>
+        <a href="{{ url_for('download_example_full_genome_csv_route') }}" class="button">Download Example For CSV File</a>
+        <br><br><br>
+
+        <button type="submit">Search</button>
+    </form>
+
+    {% if result %}
+        <hr>
+        <h2>Search Results</h2>
+        <p><strong>Total occurrences:</strong> {{ result.count }}</p>
+        <p><strong>Total searches (sample space):</strong> {{ result.total_searches }}</p>
+        <p><strong>Probability of finding 'ATTATA':</strong> {{ result.probability }}</p>
+        <p><strong>Indices where motif was found:</strong></p>
+        <div class="output-box">
+            <p>{{ result.indices | join(', ') }}</p>
+        </div>
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Promoter Motif In Multiple Sequences</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Search Promoter Motif In Multiple Sequences</h1>
+    <div class="description-box">
+        <p>This tool takes a CSV file of predicted DNA sequences and calculates how many times the <strong>'ATTATA'</strong> motif appears across sequences.
+            It also checks uniqueness of protein sequences.
+        </p>
+    </div>
+
+    <form action="{{ url_for('search_motifs_quantity_route') }}" method="post" enctype="multipart/form-data">
+        <label>Upload CSV file:</label>
+        <input type="file" name="csv_file" required>
+        <a href="{{ url_for('download_example_multiple_sequences_route') }}" class="button">Download Example For CSV File</a>
+        <br><br><br>
+        <button type="submit">Run Search</button>
+    </form>
+
+    {% if results %}
+        <h2>Results</h2>
+        <p><strong>{{ results.uniqueness_message }}</strong></p>
+        <p><strong>Total sequences tested:</strong> {{ results.total_sequences }}</p>
+        <p><strong>Total sequences with motif at least once:</strong> {{ results.num_sequences_with_motif }}</p>
+        <p><strong>Total occurrences of motif:</strong> {{ results.total_occurrences }}</p>
+        <p><strong>Total nucleotides checked:</strong> {{ results.total_nucleotides }}</p>
+        <p><strong>Probability per nucleotide:</strong> {{ results.prob_nucleotide }}</p>
+        <p><strong>Probability per sequence:</strong> {{ results.prob_sequence }}</p>
+
+        <h3>Detailed Results:</h3>
+        {{ results.results_df|safe }}
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+
+</div>
+</body>
+</html>
