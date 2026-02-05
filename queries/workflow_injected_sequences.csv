@@ -1,0 +1,101 @@
+Original DNA,Modified DNA,Num Insertions,Changes,Existing Motif,Cases
+AACTATATG,AATTATATG,1,"[('Insertion_1', 2, 'C', 'T')]",False,[3]
+ATCATTGCTTTATATTCC,ATTATAGCATTATATTCC,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'T', 'A')]",False,"[1, 2]"
+ATAATCATCATCATAATC,ATTATAATTATAATTATA,3,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T'), ('Insertion_2', 11, 'C', 'A'), ('Insertion_3', 14, 'A', 'T'), ('Insertion_3', 17, 'C', 'A')]",False,"[1, 1, 1]"
+GCCTTATATAACTATATGATAATTTCAAGC,GCATTATATAATTATATGATTATATCAAGC,3,"[('Insertion_1', 2, 'C', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'A', 'T'), ('Insertion_3', 23, 'T', 'A')]",False,"[2, 3, 1]"
+AACTATATGATCATC,AATTATATGATTATA,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'C', 'A')]",False,"[3, 1]"
+AACTATATGATCATTAACTATATGTCA,AATTATATGATTATAAATTATATGTCA,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'T', 'A'), ('Insertion_3', 17, 'C', 'T')]",False,"[3, 1, 3]"
+GCCTTATAT,GCATTATAT,1,"[('Insertion_1', 2, 'C', 'A')]",False,[2]
+ATCATCAACTATATGTCC,ATTATAAATTATATGTCC,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T')]",False,"[1, 3]"
+AACTATATGATCATC,AATTATATGATTATA,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'C', 'A')]",False,"[3, 1]"
+AACTATATGATAATCAACTATATGAGT,AATTATATGATTATAAATTATATGAGT,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'A', 'T'), ('Insertion_2', 14, 'C', 'A'), ('Insertion_3', 17, 'C', 'T')]",False,"[3, 1, 3]"
+ATAATCGCCTTATATGCTTTATATTCT,ATTATAGCATTATATGCATTATATTCT,3,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'A'), ('Insertion_3', 17, 'T', 'A')]",False,"[1, 2, 2]"
+ATAATTGCCTTATATATCATCTCT,ATTATAGCATTATATATTATATCT,3,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'A'), ('Insertion_3', 17, 'C', 'T'), ('Insertion_3', 20, 'C', 'A')]",False,"[1, 2, 1]"
+AACTATATGGCGTTATATAGC,AATTATATGGCATTATATAGC,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'G', 'A')]",False,"[3, 2]"
+ATAATTAACTATATGTCG,ATTATAAATTATATGTCG,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'T')]",False,"[1, 3]"
+ATCATTATCATC,ATTATAATTATA,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'T'), ('Insertion_2', 11, 'C', 'A')]",False,"[1, 1]"
+GCGTTATATGCCTTATATATCATT,GCATTATATGCATTATATATTATA,3,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'A'), ('Insertion_3', 20, 'C', 'T'), ('Insertion_3', 23, 'T', 'A')]",False,"[2, 2, 1]"
+ATAATCGCCTTATATAGCAGT,ATTATAGCATTATATAGCAGT,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'A')]",False,"[1, 2]"
+AACTATATGATCATC,AATTATATGATTATA,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'C', 'A')]",False,"[3, 1]"
+GCTTTATATGCTTTATATAGTTCA,GCATTATATGCATTATATAGTTCA,2,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'T', 'A')]",False,"[2, 2]"
+AACTATATGATCATTATCATCAGC,AATTATATGATTATAATTATAAGC,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'T', 'A'), ('Insertion_3', 17, 'C', 'T'), ('Insertion_3', 20, 'C', 'A')]",False,"[3, 1, 1]"
+ATCATTGCCTTATAT,ATTATAGCATTATAT,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'A')]",False,"[1, 2]"
+AACTATATGATCATTATCATTTCT,AATTATATGATTATAATTATATCT,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'T', 'A'), ('Insertion_3', 17, 'C', 'T'), ('Insertion_3', 20, 'T', 'A')]",False,"[3, 1, 1]"
+ATAATTATAATC,ATAATTATAATC,0,[],True,[]
+ATCATTTCGTCA,ATTATATCGTCA,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A')]",False,[1]
+GCTTTATATATAATTATCATTTCAAGT,GCATTATATATTATAATTATATCAAGT,3,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'A', 'T'), ('Insertion_2', 14, 'T', 'A'), ('Insertion_3', 17, 'C', 'T'), ('Insertion_3', 20, 'T', 'A')]",False,"[2, 1, 1]"
+ATCATC,ATTATA,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A')]",False,[1]
+AACTATATGAACTATATGATAATC,AATTATATGAATTATATGATTATA,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'A', 'T'), ('Insertion_3', 23, 'C', 'A')]",False,"[3, 3, 1]"
+GCCTTATAT,GCATTATAT,1,"[('Insertion_1', 2, 'C', 'A')]",False,[2]
+ATAATCAGC,ATTATAAGC,1,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A')]",False,[1]
+GCCTTATATATCATCATCATTTCGTCC,GCATTATATATTATAATTATATCGTCC,3,"[('Insertion_1', 2, 'C', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'C', 'A'), ('Insertion_3', 17, 'C', 'T'), ('Insertion_3', 20, 'T', 'A')]",False,"[2, 1, 1]"
+AACTATATG,AATTATATG,1,"[('Insertion_1', 2, 'C', 'T')]",False,[3]
+ATCATC,ATTATA,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A')]",False,[1]
+GCTTTATATAGT,GCATTATATAGT,1,"[('Insertion_1', 2, 'T', 'A')]",False,[2]
+ATAATCATAATCAGT,ATTATAATTATAAGT,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'A', 'T'), ('Insertion_2', 11, 'C', 'A')]",False,"[1, 1]"
+AACTATATGATCATC,AATTATATGATTATA,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_2', 14, 'C', 'A')]",False,"[3, 1]"
+GCTTTATATATAATTATCATCTCT,GCATTATATATTATAATTATATCT,3,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'A', 'T'), ('Insertion_2', 14, 'T', 'A'), ('Insertion_3', 17, 'C', 'T'), ('Insertion_3', 20, 'C', 'A')]",False,"[2, 1, 1]"
+GCGTTATATGCCTTATAT,GCATTATATGCATTATAT,2,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'A')]",False,"[2, 2]"
+ATCATCATAATTATAATCTCCTCA,ATCATCATAATTATAATCTCCTCA,0,[],True,[]
+GCGTTATATAACTATATGATCATCAGC,GCATTATATAATTATATGATTATAAGC,3,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'C', 'T'), ('Insertion_3', 23, 'C', 'A')]",False,"[2, 3, 1]"
+ATCATTATAATCAACTATATG,ATCATTATAATCAACTATATG,0,[],True,[]
+GCGTTATAT,GCATTATAT,1,"[('Insertion_1', 2, 'G', 'A')]",False,[2]
+AACTATATGTCG,AATTATATGTCG,1,"[('Insertion_1', 2, 'C', 'T')]",False,[3]
+GCGTTATATAACTATATGAGTAGT,GCATTATATAATTATATGAGTAGT,2,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'T')]",False,"[2, 3]"
+ATCATTAGT,ATTATAAGT,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A')]",False,[1]
+AACTATATGAACTATATG,AATTATATGAATTATATG,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T')]",False,"[3, 3]"
+ATCATTATAATTATAATTAGTAGC,ATCATTATAATTATAATTAGTAGC,0,[],True,[]
+GCGTTATATAACTATATGTCCTCC,GCATTATATAATTATATGTCCTCC,2,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'T')]",False,"[2, 3]"
+AACTATATGATAATTGCCTTATAT,AATTATATGATTATAGCATTATAT,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'A', 'T'), ('Insertion_2', 14, 'T', 'A'), ('Insertion_3', 17, 'C', 'A')]",False,"[3, 1, 2]"
+GCCTTATATGCGTTATATTCT,GCATTATATGCATTATATTCT,2,"[('Insertion_1', 2, 'C', 'A'), ('Insertion_2', 11, 'G', 'A')]",False,"[2, 2]"
+GCGTTATATGCGTTATATAACTATATG,GCATTATATGCATTATATAATTATATG,3,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'G', 'A'), ('Insertion_3', 20, 'C', 'T')]",False,"[2, 2, 3]"
+AACTATATGGCGTTATATTCT,AATTATATGGCATTATATTCT,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'G', 'A')]",False,"[3, 2]"
+AACTATATGAACTATATG,AATTATATGAATTATATG,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T')]",False,"[3, 3]"
+GCCTTATATAACTATATGAGT,GCATTATATAATTATATGAGT,2,"[('Insertion_1', 2, 'C', 'A'), ('Insertion_2', 11, 'C', 'T')]",False,"[2, 3]"
+GCGTTATATTCT,GCATTATATTCT,1,"[('Insertion_1', 2, 'G', 'A')]",False,[2]
+AACTATATGTCAAGC,AATTATATGTCAAGC,1,"[('Insertion_1', 2, 'C', 'T')]",False,[3]
+AACTATATGATAATCAGT,AATTATATGATTATAAGT,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'A', 'T'), ('Insertion_2', 14, 'C', 'A')]",False,"[3, 1]"
+ATAATT,ATTATA,1,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'T', 'A')]",False,[1]
+GCCTTATATAGT,GCATTATATAGT,1,"[('Insertion_1', 2, 'C', 'A')]",False,[2]
+ATAATTGCCTTATAT,ATTATAGCATTATAT,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'A')]",False,"[1, 2]"
+ATAATCATAATTAGT,ATTATAATTATAAGT,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'A', 'T'), ('Insertion_2', 11, 'T', 'A')]",False,"[1, 1]"
+GCTTTATATGCGTTATAT,GCATTATATGCATTATAT,2,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'G', 'A')]",False,"[2, 2]"
+AACTATATGTCA,AATTATATGTCA,1,"[('Insertion_1', 2, 'C', 'T')]",False,[3]
+GCTTTATATAACTATATGAACTATATGAGC,GCATTATATAATTATATGAATTATATGAGC,3,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'C', 'T')]",False,"[2, 3, 3]"
+GCGTTATATTCCTCC,GCATTATATTCCTCC,1,"[('Insertion_1', 2, 'G', 'A')]",False,[2]
+ATCATCAGC,ATTATAAGC,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A')]",False,[1]
+GCGTTATATTCG,GCATTATATTCG,1,"[('Insertion_1', 2, 'G', 'A')]",False,[2]
+AACTATATGGCCTTATATGCCTTATATTCG,AATTATATGGCATTATATGCATTATATTCG,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'A'), ('Insertion_3', 20, 'C', 'A')]",False,"[3, 2, 2]"
+AACTATATGAACTATATG,AATTATATGAATTATATG,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T')]",False,"[3, 3]"
+GCCTTATATTCG,GCATTATATTCG,1,"[('Insertion_1', 2, 'C', 'A')]",False,[2]
+ATCATCAACTATATGGCTTTATAT,ATTATAAATTATATGGCATTATAT,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T'), ('Insertion_3', 17, 'T', 'A')]",False,"[1, 3, 2]"
+ATAATCAACTATATG,ATTATAAATTATATG,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T')]",False,"[1, 3]"
+GCGTTATATAACTATATG,GCATTATATAATTATATG,2,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'T')]",False,"[2, 3]"
+AACTATATGGCTTTATATATCATTTCCAGC,AATTATATGGCATTATATATTATATCCAGC,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'T', 'A'), ('Insertion_3', 20, 'C', 'T'), ('Insertion_3', 23, 'T', 'A')]",False,"[3, 2, 1]"
+GCTTTATATAGTAGT,GCATTATATAGTAGT,1,"[('Insertion_1', 2, 'T', 'A')]",False,[2]
+ATCATCATAATCATCATTTCG,ATTATAATTATAATTATATCG,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'A', 'T'), ('Insertion_2', 11, 'C', 'A'), ('Insertion_3', 14, 'C', 'T'), ('Insertion_3', 17, 'T', 'A')]",False,"[1, 1, 1]"
+ATCATTAACTATATGAGTTCT,ATTATAAATTATATGAGTTCT,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'T')]",False,"[1, 3]"
+AACTATATGAACTATATG,AATTATATGAATTATATG,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T')]",False,"[3, 3]"
+ATAATCAACTATATGTCA,ATTATAAATTATATGTCA,2,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T')]",False,"[1, 3]"
+GCCTTATATGCCTTATATGCTTTATATAGC,GCATTATATGCATTATATGCATTATATAGC,3,"[('Insertion_1', 2, 'C', 'A'), ('Insertion_2', 11, 'C', 'A'), ('Insertion_3', 20, 'T', 'A')]",False,"[2, 2, 2]"
+GCGTTATATAACTATATGGCGTTATATTCA,GCATTATATAATTATATGGCATTATATTCA,3,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'G', 'A')]",False,"[2, 3, 2]"
+GCGTTATATAACTATATGAGT,GCATTATATAATTATATGAGT,2,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'C', 'T')]",False,"[2, 3]"
+GCTTTATATAACTATATGGCGTTATAT,GCATTATATAATTATATGGCATTATAT,3,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'G', 'A')]",False,"[2, 3, 2]"
+GCTTTATATGCTTTATATAACTATATGTCC,GCATTATATGCATTATATAATTATATGTCC,3,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'T', 'A'), ('Insertion_3', 20, 'C', 'T')]",False,"[2, 2, 3]"
+GCTTTATAT,GCATTATAT,1,"[('Insertion_1', 2, 'T', 'A')]",False,[2]
+GCGTTATATGCTTTATATAACTATATG,GCATTATATGCATTATATAATTATATG,3,"[('Insertion_1', 2, 'G', 'A'), ('Insertion_2', 11, 'T', 'A'), ('Insertion_3', 20, 'C', 'T')]",False,"[2, 2, 3]"
+AACTATATGGCGTTATAT,AATTATATGGCATTATAT,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'G', 'A')]",False,"[3, 2]"
+GCTTTATATAACTATATG,GCATTATATAATTATATG,2,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'C', 'T')]",False,"[2, 3]"
+ATAATCAACTATATGAACTATATGAGT,ATTATAAATTATATGAATTATATGAGT,3,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T'), ('Insertion_3', 17, 'C', 'T')]",False,"[1, 3, 3]"
+ATAATTAACTATATGATAATT,ATTATAAATTATATGATTATA,3,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'C', 'T'), ('Insertion_3', 17, 'A', 'T'), ('Insertion_3', 20, 'T', 'A')]",False,"[1, 3, 1]"
+ATCATCATCATCAACTATATGAGTTCT,ATTATAATTATAAATTATATGAGTTCT,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'T'), ('Insertion_2', 11, 'C', 'A'), ('Insertion_3', 14, 'C', 'T')]",False,"[1, 1, 3]"
+GCCTTATAT,GCATTATAT,1,"[('Insertion_1', 2, 'C', 'A')]",False,[2]
+AACTATATGAACTATATGAGC,AATTATATGAATTATATGAGC,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_2', 11, 'C', 'T')]",False,"[3, 3]"
+GCGTTATATTCA,GCATTATATTCA,1,"[('Insertion_1', 2, 'G', 'A')]",False,[2]
+ATCATCGCCTTATATAGTAGC,ATTATAGCATTATATAGTAGC,2,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'A')]",False,"[1, 2]"
+GCTTTATATAACTATATGATAATCAGTTCT,GCATTATATAATTATATGATTATAAGTTCT,3,"[('Insertion_1', 2, 'T', 'A'), ('Insertion_2', 11, 'C', 'T'), ('Insertion_3', 20, 'A', 'T'), ('Insertion_3', 23, 'C', 'A')]",False,"[2, 3, 1]"
+ATCATT,ATTATA,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A')]",False,[1]
+ATAATTGCGTTATATGCCTTATATTCA,ATTATAGCATTATATGCATTATATTCA,3,"[('Insertion_1', 2, 'A', 'T'), ('Insertion_1', 5, 'T', 'A'), ('Insertion_2', 8, 'G', 'A'), ('Insertion_3', 17, 'C', 'A')]",False,"[1, 2, 2]"
+ATCATTTCA,ATTATATCA,1,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'T', 'A')]",False,[1]
+ATCATCGCCTTATATAACTATATGTCTAGT,ATTATAGCATTATATAATTATATGTCTAGT,3,"[('Insertion_1', 2, 'C', 'T'), ('Insertion_1', 5, 'C', 'A'), ('Insertion_2', 8, 'C', 'A'), ('Insertion_3', 17, 'C', 'T')]",False,"[1, 2, 3]"
+AACTATATG,AATTATATG,1,"[('Insertion_1', 2, 'C', 'T')]",False,[3]

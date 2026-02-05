@@ -178,16 +178,11 @@ def example_5_inject_motif():
         print(f"✓ Successfully processed {len(df_inject)} sequences")
         print(f"✓ Saved to: {output_path}")
         
-        if 'all_changes' in results:
-            total_changes = len(results['all_changes'])
-            print(f"✓ Total genetic changes made: {total_changes}")
-        
         print(f"\nFirst modified sequence preview:")
         first = df_inject.iloc[0]
-        print(f"  Original DNA length: {len(first['predicted_dna'])} bp")
-        print(f"  Protein preserved: {first['protein_sequence'][:20]}..." 
-              if len(first['protein_sequence']) > 20 
-              else f"  Protein: {first['protein_sequence']}")
+        print(f"  Original DNA length: {len(first['Original DNA'])} bp")
+        print(f"  Modified DNA length: {len(first['Modified DNA'])} bp")
+        print(f"  Number of insertions: {first['Num Insertions']}")
     else:
         print("❌ Injection failed")
 
@@ -197,7 +192,6 @@ def workflow_complete_pipeline():
     print_header("COMPLETE WORKFLOW: Test → Inject → Analyze")
     
     test_file = "workflow_test_sequences.csv"
-    injected_file = "workflow_injected_sequences.csv"
     
     # Step 1: Generate test sequences
     print_subheader("Step 1: Generate Test Sequences")
@@ -209,14 +203,33 @@ def workflow_complete_pipeline():
     # Step 2: Inject motif
     print_subheader("Step 2: Inject ATTATA Motif")
     print("Injecting ATTATA into sequences...")
+    injected_file = "workflow_injected_sequences.csv"
     inject_motif.process_csv(test_file, injected_file)
     df_injected = pd.read_csv(injected_file)
     print(f"✓ Modified {len(df_injected)} sequences")
     
-    # Step 3: Analyze results
-    print_subheader("Step 3: Analyze Motif Distribution")
+    # Step 3: Prepare data for analysis (convert column names for compatibility)
+    print_subheader("Step 3: Prepare Data for Analysis")
+    # Create a compatible CSV for search_motifs_quantity
+    df_compatible = df_injected.copy()
+    df_compatible['Serial'] = range(1, len(df_compatible) + 1)
+    df_compatible['Id'] = [f"seq_{i}" for i in range(1, len(df_compatible) + 1)]
+    df_compatible['predicted_dna'] = df_compatible['Modified DNA']
+    df_compatible['protein_sequence'] = df_injected['Original DNA'].apply(
+        lambda x: str(pd.Series([x]).apply(lambda y: y).iloc[0])  # Placeholder
+    )
+    df_compatible['organism_name'] = 'test_organism'
+    
+    analysis_file = "workflow_for_analysis.csv"
+    df_compatible[['Serial', 'Id', 'predicted_dna', 'protein_sequence', 'organism_name']].to_csv(
+        analysis_file, index=False
+    )
+    print(f"✓ Prepared data for analysis")
+    
+    # Step 4: Analyze results
+    print_subheader("Step 4: Analyze Motif Distribution")
     print("Searching for ATTATA in modified sequences...")
-    results = search_motifs_quantity.search_motif(injected_file)
+    results = search_motifs_quantity.search_motif(analysis_file)
     
     print_subheader("Complete Analysis Results")
     print(f"Total sequences: {results['total_sequences']}")

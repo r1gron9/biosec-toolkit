@@ -1,0 +1,101 @@
+predicted_dna,protein_sequence,expected_case
+AACTATATG,NYM,[(case 3: start in codon 1)]
+ATCATTGCTTTATATTCC,IIALYS,"[(case 1: start in codon 1), (case 2: start in codon 3)]"
+ATAATCATCATCATAATC,IIIIII,"[(case 1: start in codon 1), (case 1: start in codon 3), (case 1: start in codon 5)]"
+GCCTTATATAACTATATGATAATTTCAAGC,ALYNYMIISS,"[(case 2: start in codon 1), (case 3: start in codon 4), (case 1: start in codon 7)]"
+AACTATATGATCATC,NYMII,"[(case 3: start in codon 1), (case 1: start in codon 4)]"
+AACTATATGATCATTAACTATATGTCA,NYMIINYMS,"[(case 3: start in codon 1), (case 1: start in codon 4), (case 3: start in codon 6)]"
+GCCTTATAT,ALY,[(case 2: start in codon 1)]
+ATCATCAACTATATGTCC,IINYMS,"[(case 1: start in codon 1), (case 3: start in codon 3)]"
+AACTATATGATCATC,NYMII,"[(case 3: start in codon 1), (case 1: start in codon 4)]"
+AACTATATGATAATCAACTATATGAGT,NYMIINYMS,"[(case 3: start in codon 1), (case 1: start in codon 4), (case 3: start in codon 6)]"
+ATAATCGCCTTATATGCTTTATATTCT,IIALYALYS,"[(case 1: start in codon 1), (case 2: start in codon 3), (case 2: start in codon 6)]"
+ATAATTGCCTTATATATCATCTCT,IIALYIIS,"[(case 1: start in codon 1), (case 2: start in codon 3), (case 1: start in codon 6)]"
+AACTATATGGCGTTATATAGC,NYMALYS,"[(case 3: start in codon 1), (case 2: start in codon 4)]"
+ATAATTAACTATATGTCG,IINYMS,"[(case 1: start in codon 1), (case 3: start in codon 3)]"
+ATCATTATCATC,IIII,"[(case 1: start in codon 1), (case 1: start in codon 3)]"
+GCGTTATATGCCTTATATATCATT,ALYALYII,"[(case 2: start in codon 1), (case 2: start in codon 4), (case 1: start in codon 7)]"
+ATAATCGCCTTATATAGCAGT,IIALYSS,"[(case 1: start in codon 1), (case 2: start in codon 3)]"
+AACTATATGATCATC,NYMII,"[(case 3: start in codon 1), (case 1: start in codon 4)]"
+GCTTTATATGCTTTATATAGTTCA,ALYALYSS,"[(case 2: start in codon 1), (case 2: start in codon 4)]"
+AACTATATGATCATTATCATCAGC,NYMIIIIS,"[(case 3: start in codon 1), (case 1: start in codon 4), (case 1: start in codon 6)]"
+ATCATTGCCTTATAT,IIALY,"[(case 1: start in codon 1), (case 2: start in codon 3)]"
+AACTATATGATCATTATCATTTCT,NYMIIIIS,"[(case 3: start in codon 1), (case 1: start in codon 4), (case 1: start in codon 6)]"
+ATAATTATAATC,IIII,"[(case 1: start in codon 1), (case 1: start in codon 3)]"
+ATCATTTCGTCA,IISS,[(case 1: start in codon 1)]
+GCTTTATATATAATTATCATTTCAAGT,ALYIIIISS,"[(case 2: start in codon 1), (case 1: start in codon 4), (case 1: start in codon 6)]"
+ATCATC,II,[(case 1: start in codon 1)]
+AACTATATGAACTATATGATAATC,NYMNYMII,"[(case 3: start in codon 1), (case 3: start in codon 4), (case 1: start in codon 7)]"
+GCCTTATAT,ALY,[(case 2: start in codon 1)]
+ATAATCAGC,IIS,[(case 1: start in codon 1)]
+GCCTTATATATCATCATCATTTCGTCC,ALYIIIISS,"[(case 2: start in codon 1), (case 1: start in codon 4), (case 1: start in codon 6)]"
+AACTATATG,NYM,[(case 3: start in codon 1)]
+ATCATC,II,[(case 1: start in codon 1)]
+GCTTTATATAGT,ALYS,[(case 2: start in codon 1)]
+ATAATCATAATCAGT,IIIIS,"[(case 1: start in codon 1), (case 1: start in codon 3)]"
+AACTATATGATCATC,NYMII,"[(case 3: start in codon 1), (case 1: start in codon 4)]"
+GCTTTATATATAATTATCATCTCT,ALYIIIIS,"[(case 2: start in codon 1), (case 1: start in codon 4), (case 1: start in codon 6)]"
+GCGTTATATGCCTTATAT,ALYALY,"[(case 2: start in codon 1), (case 2: start in codon 4)]"
+ATCATCATAATTATAATCTCCTCA,IIIIIISS,"[(case 1: start in codon 1), (case 1: start in codon 3), (case 1: start in codon 5)]"
+GCGTTATATAACTATATGATCATCAGC,ALYNYMIIS,"[(case 2: start in codon 1), (case 3: start in codon 4), (case 1: start in codon 7)]"
+ATCATTATAATCAACTATATG,IIIINYM,"[(case 1: start in codon 1), (case 1: start in codon 3), (case 3: start in codon 5)]"
+GCGTTATAT,ALY,[(case 2: start in codon 1)]
+AACTATATGTCG,NYMS,[(case 3: start in codon 1)]
+GCGTTATATAACTATATGAGTAGT,ALYNYMSS,"[(case 2: start in codon 1), (case 3: start in codon 4)]"
+ATCATTAGT,IIS,[(case 1: start in codon 1)]
+AACTATATGAACTATATG,NYMNYM,"[(case 3: start in codon 1), (case 3: start in codon 4)]"
+ATCATTATAATTATAATTAGTAGC,IIIIIISS,"[(case 1: start in codon 1), (case 1: start in codon 3), (case 1: start in codon 5)]"
+GCGTTATATAACTATATGTCCTCC,ALYNYMSS,"[(case 2: start in codon 1), (case 3: start in codon 4)]"
+AACTATATGATAATTGCCTTATAT,NYMIIALY,"[(case 3: start in codon 1), (case 1: start in codon 4), (case 2: start in codon 6)]"
+GCCTTATATGCGTTATATTCT,ALYALYS,"[(case 2: start in codon 1), (case 2: start in codon 4)]"
+GCGTTATATGCGTTATATAACTATATG,ALYALYNYM,"[(case 2: start in codon 1), (case 2: start in codon 4), (case 3: start in codon 7)]"
+AACTATATGGCGTTATATTCT,NYMALYS,"[(case 3: start in codon 1), (case 2: start in codon 4)]"
+AACTATATGAACTATATG,NYMNYM,"[(case 3: start in codon 1), (case 3: start in codon 4)]"
+GCCTTATATAACTATATGAGT,ALYNYMS,"[(case 2: start in codon 1), (case 3: start in codon 4)]"
+GCGTTATATTCT,ALYS,[(case 2: start in codon 1)]
+AACTATATGTCAAGC,NYMSS,[(case 3: start in codon 1)]
+AACTATATGATAATCAGT,NYMIIS,"[(case 3: start in codon 1), (case 1: start in codon 4)]"
+ATAATT,II,[(case 1: start in codon 1)]
+GCCTTATATAGT,ALYS,[(case 2: start in codon 1)]
+ATAATTGCCTTATAT,IIALY,"[(case 1: start in codon 1), (case 2: start in codon 3)]"
+ATAATCATAATTAGT,IIIIS,"[(case 1: start in codon 1), (case 1: start in codon 3)]"
+GCTTTATATGCGTTATAT,ALYALY,"[(case 2: start in codon 1), (case 2: start in codon 4)]"
+AACTATATGTCA,NYMS,[(case 3: start in codon 1)]
+GCTTTATATAACTATATGAACTATATGAGC,ALYNYMNYMS,"[(case 2: start in codon 1), (case 3: start in codon 4), (case 3: start in codon 7)]"
+GCGTTATATTCCTCC,ALYSS,[(case 2: start in codon 1)]
+ATCATCAGC,IIS,[(case 1: start in codon 1)]
+GCGTTATATTCG,ALYS,[(case 2: start in codon 1)]
+AACTATATGGCCTTATATGCCTTATATTCG,NYMALYALYS,"[(case 3: start in codon 1), (case 2: start in codon 4), (case 2: start in codon 7)]"
+AACTATATGAACTATATG,NYMNYM,"[(case 3: start in codon 1), (case 3: start in codon 4)]"
+GCCTTATATTCG,ALYS,[(case 2: start in codon 1)]
+ATCATCAACTATATGGCTTTATAT,IINYMALY,"[(case 1: start in codon 1), (case 3: start in codon 3), (case 2: start in codon 6)]"
+ATAATCAACTATATG,IINYM,"[(case 1: start in codon 1), (case 3: start in codon 3)]"
+GCGTTATATAACTATATG,ALYNYM,"[(case 2: start in codon 1), (case 3: start in codon 4)]"
+AACTATATGGCTTTATATATCATTTCCAGC,NYMALYIISS,"[(case 3: start in codon 1), (case 2: start in codon 4), (case 1: start in codon 7)]"
+GCTTTATATAGTAGT,ALYSS,[(case 2: start in codon 1)]
+ATCATCATAATCATCATTTCG,IIIIIIS,"[(case 1: start in codon 1), (case 1: start in codon 3), (case 1: start in codon 5)]"
+ATCATTAACTATATGAGTTCT,IINYMSS,"[(case 1: start in codon 1), (case 3: start in codon 3)]"
+AACTATATGAACTATATG,NYMNYM,"[(case 3: start in codon 1), (case 3: start in codon 4)]"
+ATAATCAACTATATGTCA,IINYMS,"[(case 1: start in codon 1), (case 3: start in codon 3)]"
+GCCTTATATGCCTTATATGCTTTATATAGC,ALYALYALYS,"[(case 2: start in codon 1), (case 2: start in codon 4), (case 2: start in codon 7)]"
+GCGTTATATAACTATATGGCGTTATATTCA,ALYNYMALYS,"[(case 2: start in codon 1), (case 3: start in codon 4), (case 2: start in codon 7)]"
+GCGTTATATAACTATATGAGT,ALYNYMS,"[(case 2: start in codon 1), (case 3: start in codon 4)]"
+GCTTTATATAACTATATGGCGTTATAT,ALYNYMALY,"[(case 2: start in codon 1), (case 3: start in codon 4), (case 2: start in codon 7)]"
+GCTTTATATGCTTTATATAACTATATGTCC,ALYALYNYMS,"[(case 2: start in codon 1), (case 2: start in codon 4), (case 3: start in codon 7)]"
+GCTTTATAT,ALY,[(case 2: start in codon 1)]
+GCGTTATATGCTTTATATAACTATATG,ALYALYNYM,"[(case 2: start in codon 1), (case 2: start in codon 4), (case 3: start in codon 7)]"
+AACTATATGGCGTTATAT,NYMALY,"[(case 3: start in codon 1), (case 2: start in codon 4)]"
+GCTTTATATAACTATATG,ALYNYM,"[(case 2: start in codon 1), (case 3: start in codon 4)]"
+ATAATCAACTATATGAACTATATGAGT,IINYMNYMS,"[(case 1: start in codon 1), (case 3: start in codon 3), (case 3: start in codon 6)]"
+ATAATTAACTATATGATAATT,IINYMII,"[(case 1: start in codon 1), (case 3: start in codon 3), (case 1: start in codon 6)]"
+ATCATCATCATCAACTATATGAGTTCT,IIIINYMSS,"[(case 1: start in codon 1), (case 1: start in codon 3), (case 3: start in codon 5)]"
+GCCTTATAT,ALY,[(case 2: start in codon 1)]
+AACTATATGAACTATATGAGC,NYMNYMS,"[(case 3: start in codon 1), (case 3: start in codon 4)]"
+GCGTTATATTCA,ALYS,[(case 2: start in codon 1)]
+ATCATCGCCTTATATAGTAGC,IIALYSS,"[(case 1: start in codon 1), (case 2: start in codon 3)]"
+GCTTTATATAACTATATGATAATCAGTTCT,ALYNYMIISS,"[(case 2: start in codon 1), (case 3: start in codon 4), (case 1: start in codon 7)]"
+ATCATT,II,[(case 1: start in codon 1)]
+ATAATTGCGTTATATGCCTTATATTCA,IIALYALYS,"[(case 1: start in codon 1), (case 2: start in codon 3), (case 2: start in codon 6)]"
+ATCATTTCA,IIS,[(case 1: start in codon 1)]
+ATCATCGCCTTATATAACTATATGTCTAGT,IIALYNYMSS,"[(case 1: start in codon 1), (case 2: start in codon 3), (case 3: start in codon 6)]"
+AACTATATG,NYM,[(case 3: start in codon 1)]
