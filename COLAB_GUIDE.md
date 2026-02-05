@@ -5,12 +5,12 @@
 Google Colab (Colaboratory) is a free cloud-based notebook environment that runs in your browser. No installation required!
 
 ### Benefits
-- ✓ Free computing power
-- ✓ Pre-installed libraries
-- ✓ Save results to Google Drive
-- ✓ Share notebooks with others
-- ✓ No configuration needed
-- ✓ Works on Windows, Mac, Linux
+- Free computing power
+- Pre-installed libraries
+- Save results to Google Drive
+- Share notebooks with others
+- No configuration needed
+- Works on Windows, Mac, Linux
 
 ---
 
@@ -174,4 +174,4 @@ Left sidebar → "Files" icon → Right-click file → "Add shortcut to Drive"
 
 ---
 
-**Ready to start?** Click the "Open In Colab" badge in the README! 🚀
+**Ready to start?** Click the "Open In Colab" badge in the README!

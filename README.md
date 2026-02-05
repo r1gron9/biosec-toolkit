@@ -1,16 +1,16 @@
-# 🧬 biosec-toolkit
+# biosec-toolkit
 
-A comprehensive **Codon Optimization and Bioinformatics Analysis Platform** for DNA sequence engineering and ATTATA promoter motif injection while preserving protein sequences.
+A comprehensive Codon Optimization and Bioinformatics Analysis Platform for DNA sequence engineering and ATTATA promoter motif injection while preserving protein sequences.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_notebook.ipynb)
-[![GitHub](https://img.shields.io/badge/GitHub-r1gron9%2Fbiosec--toolkit-blue?logo=github&style=flat)](https://github.com/r1gron9/biosec-toolkit)
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green?style=flat&logo=python)](https://www.python.org)
+[Open In Colab](https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_notebook.ipynb) | [GitHub](https://github.com/r1gron9/biosec-toolkit) | [Python 3.8+](https://www.python.org)
 
-## 🚀 Quick Start
+## Quick Start
 
 **No Installation Needed!** Click the "Open in Colab" button above to run everything in your browser.
 
-**See [COLAB_GUIDE.md](COLAB_GUIDE.md)** for detailed Colab instructions.
+**See [USER_ACCESS.md](USER_ACCESS.md)** for a complete overview of all 4 ways to use biosec-toolkit.
+
+See [COLAB_GUIDE.md](COLAB_GUIDE.md) for detailed Colab instructions.
 
 ## Overview
 
@@ -413,7 +413,7 @@ biosec-toolkit/
     └── queries_examples.ipynb      # Interactive Jupyter notebook
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8+
@@ -473,7 +473,7 @@ jupyter notebook queries_examples.ipynb
 - File format examples
 - Troubleshooting guide
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Direct Python Usage
 
@@ -539,7 +539,7 @@ Serial,Id,predicted_dna,protein_sequence,organism_name
 2,protein_002,GCTAGCTA...,STWPQ...,S.cerevisiae
 ```
 
-## 🔧 ATTATA Motif Injection Strategies
+## ATTATA Motif Injection Strategies
 
 The toolkit supports three intelligent codon modification strategies:
 
@@ -566,7 +566,7 @@ When running analysis, the toolkit generates:
 - **inject_motif_output.csv** - Optimized sequences with injected motif
 - Custom CSV files for analysis results
 
-## 🧬 Biological Context
+## Biological Context
 
 ### ATTATA Motif
 The ATTATA hexanucleotide is a transcription factor binding site found in bacterial promoter regions. It's part of the -10 box (Pribnow box) consensus sequence recognized by sigma factor in transcription initiation.
@@ -586,7 +586,7 @@ Different codons encode the same amino acid (degeneracy of genetic code). By str
 - **Genome analysis:** Identification and quantification of regulatory motifs
 - **Quality control:** Validation of genetic constructs
 
-## 📚 Dependencies
+## Dependencies
 
 - **Flask** - Web framework for the UI
 - **Biopython** - Bioinformatics sequence handling and codon tables
@@ -597,7 +597,7 @@ Different codons encode the same amino acid (degeneracy of genetic code). By str
 
 See `requirements.txt` for specific versions.
 
-## 🛠️ Development
+## Development
 
 ### Project Structure Notes
 - All core analysis logic is in `modules/` directory
@@ -618,7 +618,7 @@ See `requirements.txt` for specific versions.
 - Examine example files in `examples/` directory
 - Review source code docstrings: `help(modules.inject_motif)`
 
-## ⚠️ Important Notes
+## Important Notes
 
 - All protein sequences are **100% preserved** during optimization
 - Large files (>10MB) may require significant processing time

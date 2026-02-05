@@ -2,7 +2,7 @@
 
 This directory contains examples for running DNA sequence analysis queries programmatically without using the web interface.
 
-## 📖 Quick Start
+## Quick Start
 
 ### Option 1: Jupyter Notebook (Recommended for Learning)
 ```bash
@@ -14,7 +14,7 @@ jupyter notebook queries_examples.ipynb
 python run_queries.py
 ```
 
-## 📚 Available Modules
+## Available Modules
 
 ### 1. `modules.compare_sequences`
 Compare two DNA sequences with detailed analysis.
@@ -332,7 +332,7 @@ with open('analysis_results.json', 'w') as f:
 
 ---
 
-## 🔧 Common Issues & Solutions
+## Common Issues & Solutions
 
 **Issue:** Module import errors
 ```
