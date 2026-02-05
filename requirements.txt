@@ -1,5 +1,6 @@
-Flask
+Flask>=2.0.0
 python-dotenv
-biopython
-pandas
+biopython>=1.78
+pandas>=1.1.0
 tqdm
+numpy
