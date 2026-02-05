@@ -10,6 +10,8 @@ A comprehensive **Codon Optimization and Bioinformatics Analysis Platform** for 
 
 **No Installation Needed!** Click the "Open in Colab" button above to run everything in your browser.
 
+**See [COLAB_GUIDE.md](COLAB_GUIDE.md)** for detailed Colab instructions.
+
 ## Overview
 
 **biosec-toolkit** is a Flask-based bioinformatics application that enables systematic analysis and optimization of DNA sequences. The software provides computational tools for:
