@@ -189,7 +189,7 @@ def example_5_inject_motif():
 
 def workflow_complete_pipeline():
     """Complete analysis pipeline"""
-    print_header("COMPLETE WORKFLOW: Test → Inject → Analyze")
+    print_header("COMPLETE WORKFLOW: Test -> Inject -> Analyze")
     
     test_file = "workflow_test_sequences.csv"
     
