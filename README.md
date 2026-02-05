@@ -448,6 +448,14 @@ cd queries
 jupyter notebook queries_examples.ipynb
 ```
 
+### Non-Developer Users
+
+**See [USER_GUIDE.md](USER_GUIDE.md)** for a complete guide on using biosec-toolkit without writing code:
+- Web Interface walkthrough
+- Step-by-step tool instructions
+- File format examples
+- Troubleshooting guide
+
 ## 📖 Usage Examples
 
 ### Direct Python Usage
