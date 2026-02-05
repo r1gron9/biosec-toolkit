@@ -2,11 +2,11 @@
 
 A comprehensive Codon Optimization and Bioinformatics Analysis Platform for DNA sequence engineering and ATTATA promoter motif injection while preserving protein sequences.
 
-[Open In Colab](https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_notebook.ipynb) | [GitHub](https://github.com/r1gron9/biosec-toolkit) | [Python 3.8+](https://www.python.org)
+**[Simple Colab (Recommended)](https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_simple.ipynb)** | [Full Colab](https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_notebook.ipynb) | [GitHub](https://github.com/r1gron9/biosec-toolkit) | [Python 3.8+](https://www.python.org)
 
 ## Quick Start
 
-**No Installation Needed!** Click the "Open in Colab" button above to run everything in your browser.
+**No Installation Needed!** Click "Simple Colab (Recommended)" above to run everything in your browser.
 
 **See [USER_ACCESS.md](USER_ACCESS.md)** for a complete overview of all 4 ways to use biosec-toolkit.
 
