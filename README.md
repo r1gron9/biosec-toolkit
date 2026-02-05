@@ -2,6 +2,24 @@
 
 A comprehensive **Codon Optimization and Bioinformatics Analysis Platform** for DNA sequence engineering and ATTATA promoter motif injection while preserving protein sequences.
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/r1gron9/biosec-toolkit/main?filepath=queries/queries_examples.ipynb)
+[![GitHub](https://img.shields.io/badge/GitHub-r1gron9%2Fbiosec--toolkit-blue?logo=github&style=flat)](https://github.com/r1gron9/biosec-toolkit)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green?style=flat&logo=python)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 📖 Quick Navigation
+
+- **[Getting Started](#getting-started)** - Installation and setup
+- **[Usage Guide](#usage-examples)** - How to use the tools
+- **[Interactive Notebook](#-interactive-notebook)** - Run examples online
+- **[API Reference](#-usage-and-api)** - Module documentation
+- **[Non-Developer Guide](USER_GUIDE.md)** - For end users
+- **[GitHub Search](#-searching-the-repository)** - Find code examples
+
+---
+
 ## Overview
 
 **biosec-toolkit** is a Flask-based bioinformatics application that enables systematic analysis and optimization of DNA sequences. The software provides computational tools for:
@@ -447,6 +465,74 @@ python run_queries.py
 cd queries
 jupyter notebook queries_examples.ipynb
 ```
+
+Or **run online** (no installation needed): Click the Binder badge at the top!
+
+---
+
+## 📓 Interactive Notebook
+
+The Jupyter notebook provides a **step-by-step interactive guide** to all biosec-toolkit features:
+
+### Running Online (Recommended for first-time users)
+- Click the **Binder** badge at the top of this page
+- Runs completely in your browser - no installation needed
+- No account required
+
+### View on GitHub
+- Navigate to: [`queries/queries_examples.ipynb`](queries/queries_examples.ipynb)
+- GitHub renders the notebook with all outputs
+- Read-only, but see complete execution examples
+
+### Run Locally
+```bash
+pip install jupyter
+cd queries
+jupyter notebook queries_examples.ipynb
+```
+
+### Notebook Contents
+1. **Setup & Imports** - Environment configuration
+2. **Sequence Comparison** - Analyze differences between sequences
+3. **Promoter Search** - Find ATTATA in gene regions
+4. **Motif Analysis** - Statistical distribution analysis
+5. **Test Generation** - Create synthetic sequences
+6. **Motif Injection** - Insert ATTATA into DNA
+7. **Complete Workflow** - Full pipeline demonstration
+
+Each section includes executable code + explanations + results.
+
+---
+
+## 🔍 Searching the Repository
+
+### GitHub Search Bar
+Use GitHub's built-in search (magnifying glass icon in top navigation):
+
+Common searches:
+- `ATTATA` - Find all ATTATA related code
+- `inject_motif` - Find motif injection functions
+- `codon` - Find codon optimization code
+- `in:code` - Search only code (not documentation)
+
+### Advanced Searches
+```
+# Search in specific files
+in:path:modules/ function_name
+
+# Search in specific file type
+filename:README.md search_term
+
+# Search in tests
+in:path:tests/ TestName
+```
+
+### Quick Links
+- [Search all ATTATA references](https://github.com/r1gron9/biosec-toolkit/search?q=ATTATA)
+- [Search all tests](https://github.com/r1gron9/biosec-toolkit/search?type=code&language=python&q=in%3Apath%3Atests)
+- [Search modules](https://github.com/r1gron9/biosec-toolkit/search?type=code&language=python&q=in%3Apath%3Amodules)
+
+---
 
 ### Non-Developer Users
 
