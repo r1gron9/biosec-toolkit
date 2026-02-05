@@ -2,48 +2,359 @@
 
 A comprehensive **Codon Optimization and Bioinformatics Analysis Platform** for DNA sequence engineering and ATTATA promoter motif injection while preserving protein sequences.
 
-## 🎯 Overview
+## Overview
 
-**biosec-toolkit** is a Flask-based bioinformatics tool that enables researchers to:
-- **Optimize DNA sequences** through intelligent codon selection
-- **Inject ATTATA promoter motifs** while maintaining exact protein functionality
-- **Analyze genomic sequences** for motif distribution and patterns
-- **Compare sequence variants** with detailed triplet-level analysis
-- **Generate synthetic test sequences** for validation and testing
+**biosec-toolkit** is a Flask-based bioinformatics application that enables systematic analysis and optimization of DNA sequences. The software provides computational tools for:
 
-### Key Innovation
-The toolkit uses **synonymous codon optimization** to insert the ATTATA motif into DNA sequences without altering the resulting protein - a critical capability for genetic engineering and synthetic biology applications.
+- DNA sequence optimization through intelligent codon selection
+- ATTATA promoter motif injection while maintaining protein functionality
+- Comprehensive genomic sequence analysis for motif distribution and patterns
+- Comparative sequence analysis with detailed nucleotide-level assessment
+- Generation of synthetic test sequences for validation studies
 
-## 🧪 Core Features
+### Research Innovation
 
-### 1. **Codon Optimization & Motif Injection**
-- Inject ATTATA promoter motifs into DNA sequences
-- Preserve 100% protein sequence integrity
-- Three intelligent injection strategies based on codon flexibility
-- Real-time genetic change tracking
+The toolkit implements **synonymous codon optimization** methodology to insert regulatory sequences (ATTATA motif) into DNA without altering the resulting protein product. This capability addresses a critical need in genetic engineering and synthetic biology applications where sequence optimization must maintain biological functionality.
 
-### 2. **Sequence Comparison Analysis**
-- Compare DNA sequences at the triplet level
-- Identify differences with color-coded visualization
-- Analyze reverse complement regions
-- Search for regulatory motifs in complement sequences
+## Core Functionality
 
-### 3. **Promoter Motif Search**
-- Search for ATTATA in gene promoter regions
-- Load genomic sequences (FASTA) and gene locations (CSV)
-- Calculate probability of motif occurrence
-- Identify all occurrence positions
+### Sequence Optimization with Motif Injection
 
-### 4. **Motif Quantity Analysis**
-- Analyze ATTATA distribution in sequence databases
-- Identify and report duplicate sequences
-- Calculate occurrence probability at nucleotide and sequence levels
-- Generate comprehensive analysis reports
+The primary function of this software is to optimize DNA sequences through codon substitution while inserting the ATTATA hexanucleotide motif. The system employs three distinct algorithmic strategies based on codon flexibility constraints.
 
-### 5. **Synthetic Test Data Generation**
-- Generate realistic synthetic DNA sequences
-- Create sequences with multi-case ATTATA injection scenarios
-- Export as CSV for testing and validation
+Key features:
+- Insertion of ATTATA promoter elements into DNA sequences
+- Complete preservation of encoded protein sequences
+- Three distinct injection strategies optimized for different codon contexts
+- Detailed tracking of all genetic modifications
+
+### Comparative Sequence Analysis
+
+Provides triplet-level sequence comparison functionality with
+- Position-by-position nucleotide comparison
+- Analysis of reverse complement sequences
+- Regulatory motif identification in complementary regions
+
+### Promoter Region Analysis
+
+Enables systematic search for ATTATA motifs within gene promoter regions:
+- Integration of genomic sequence data (FASTA format)
+- Gene location specification (CSV format)
+- Statistical analysis of motif occurrence probability
+- Complete positional mapping of identified sequences
+
+### Motif Distribution Analysis
+
+Database-wide analysis of ATTATA occurrence patterns:
+- Duplicate sequence identification and reporting
+- Occurrence frequency calculation at multiple biological scales
+- Probability assessment for nucleotide and sequence levels
+- Comprehensive analysis report generation
+
+### Synthetic Sequence Generation
+
+Controlled generation of test sequences:
+- Realistic synthetic DNA sequence creation
+- Multi-case ATTATA injection scenario simulation
+- CSV export format for downstream analysis
+
+## Technical Architecture
+
+**Framework and Libraries**
+- Backend: Flask (Python web application framework)
+- Bioinformatics: Biopython (sequence processing, codon table management)
+- Data Processing: pandas, NumPy
+- User Interface: HTML5, CSS3
+
+## Project Organization
+
+```
+biosec-toolkit/
+├── app.py                          # Flask application entry point
+├── requirements.txt                # Python dependencies
+├── README.md                       # Documentation
+├── .gitignore
+│
+├── modules/                        # Core analysis modules
+│   ├── compare_sequences.py        # Sequence comparison algorithms
+│   ├── search_promoter_motif.py    # Promoter region analysis
+│   ├── search_motifs_quantity.py   # Distribution analysis
+│   ├── generate_test_file.py       # Test data generation
+│   └── inject_motif.py             # Codon optimization engine
+│
+├── templates/                      # Web interface templates
+│   ├── base.html
+│   ├── home.html
+│   ├── compare_sequences.html
+│   ├── search_promoter_motif.html
+│   ├── search_motifs_quantity.html
+│   ├── generate_test_file.html
+│   └── inject_motif.html
+│
+├── static/                         # CSS resources
+│   └── style.css
+│
+├── examples/                       # Reference datasets
+│   ├── example_E-coli.fasta
+│   ├── example_genes_full_genome.csv
+│   └── example_multiple_sequences.csv
+│
+└── queries/                        # Command-line interface
+    ├── README.md
+    ├── run_queries.py
+    └── queries_examples.ipynb
+```
+
+## Installation and Setup
+
+### System Requirements
+- Python 3.8 or higher
+- pip package manager
+
+### Installation Procedure
+
+1. Clone repository:
+```bash
+git clone https://github.com/r1gron9/biosec-toolkit.git
+cd biosec-toolkit
+```
+
+2. Create virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Execution
+
+**Web-Based Interface**
+```bash
+python app.py
+```
+Access application at http://localhost:5000
+
+**Command-Line Interface**
+```bash
+cd queries
+python run_queries.py
+```
+
+**Interactive Analysis Environment**
+```bash
+cd queries
+jupyter notebook queries_examples.ipynb
+```
+
+## Usage and API
+
+### Module: Sequence Comparison
+
+```python
+from modules import compare_sequences
+
+result = compare_sequences.display_results(
+    sequence1="ATGCTAGCTAGC",
+    sequence2="ATGCAAGCTAGC",
+    optimizer1="Reference Sequence",
+    optimizer2="Test Sequence"
+)
+```
+
+### Module: Motif Injection
+
+```python
+from modules import inject_motif
+
+results = inject_motif.process_csv(
+    input_path='sequences.csv',
+    output_filename='optimized_sequences.csv'
+)
+```
+
+### Module: Promoter Analysis
+
+```python
+from modules import search_promoter_motif
+
+results = search_promoter_motif.process_files(
+    csv_path='gene_locations.csv',
+    fasta_path='genomic_sequence.fasta'
+)
+```
+
+Additional examples and documentation: See queries/README.md and queries/queries_examples.ipynb
+
+## Data Format Specifications
+
+### Gene Location CSV
+```
+Accession,Start,Stop,Gene_symbol,Strand,NCBI_Gene_ID,Name
+NC_000001,1000,2000,GeneA,+,12345,Gene A Description
+```
+
+### FASTA Sequence Format
+```
+>identifier description
+ATGCTAGCTAGCTAGCTAGC
+TAGCTAGCTAGCTAGCTAG
+```
+
+### Protein Sequence Database CSV
+```
+Serial,Id,predicted_dna,protein_sequence,organism_name
+1,protein_001,ATGCTAGC...,MLAIV...,E.coli
+```
+
+## Algorithmic Methods: Motif Injection Strategies
+
+The system implements three codon-based insertion strategies to achieve ATTATA incorporation:
+
+| Strategy | Codon Pair | Amino Acid Translation | Resulting Sequence |
+|----------|-----------|----------------------|-------------------|
+| Case 1 | ATT + ATA | Isoleucine × 2 | ATTATA |
+| Case 2 | GCA + TTA + TAC | Alanine, Leucine, Tyrosine | ATTATA |
+| Case 3 | AAT + TAT + ATG | Asparagine, Tyrosine, Methionine | ATTATA |
+
+Each strategy exploits codon degeneracy to maintain protein sequence invariance while inserting the target motif.
+
+## Output Generation
+
+The application generates the following analysis outputs:
+- cleaned_database.csv - Deduplicated sequence database
+- duplicates_report.csv - Identified duplicate sequences
+- inject_motif_output.csv - Optimized sequences with motif insertion
+- Analysis-specific output files
+
+## Biological and Computational Context
+
+### ATTATA Motif Significance
+
+The ATTATA hexanucleotide sequence represents a conserved transcription factor binding site in bacterial promoter regions. Located within the -10 box (Pribnow box), this element is recognized by sigma factors during transcriptional initiation. The sequence carries functional significance in gene regulation and promoter strength determination.
+
+### Codon Optimization Methodology
+
+The degeneracy of the genetic code permits multiple codon combinations to specify identical amino acid sequences. This redundancy enables strategic codon selection to:
+
+- Incorporate regulatory elements while preserving protein structure
+- Optimize codon usage for specific expression systems
+- Maintain protein folding properties
+- Improve expression efficiency
+
+## Research Applications
+
+This software is applicable to multiple research domains:
+
+**Synthetic Biology**: Design and validation of engineered genetic constructs
+
+**Gene Expression Studies**: Systematic insertion of regulatory elements for expression modulation
+
+**Recombinant Protein Production**: Codon optimization for heterologous expression systems
+
+**Genomic Analysis**: Identification and quantification of regulatory sequence elements
+
+**Quality Control**: Computational validation of genetic construct integrity
+
+## Software Dependencies
+
+- Flask: Web application framework
+- Biopython: Bioinformatics sequence analysis and codon table management
+- pandas: Data structure and analysis
+- NumPy: Numerical computation
+- tqdm: Progress bar visualization
+- Werkzeug: WSGI utilities and file handling
+
+## Development Notes
+
+**Architecture**
+- Modular design with independent analysis functions in modules/ directory
+- RESTful Flask routes defined in app.py
+- Jinja2 template system for web interface
+- CSS styling in static/style.css
+
+**Extension Guidelines**
+1. Implement new analysis functionality in modules/
+2. Add corresponding Flask route in app.py
+3. Create web interface template in templates/
+4. Document functionality in queries/ examples
+
+## Documentation and Support
+
+Detailed query documentation: queries/README.md
+Interactive tutorials: queries/queries_examples.ipynb
+Example datasets: examples/ directory
+
+## Notes on Implementation
+
+- Protein sequence preservation is maintained at 100% fidelity during optimization
+- Processing of large datasets (>10MB) may require extended computation time
+- Temporary file storage: uploads/ directory
+- Genetic code implementation: NCBI standard codon table (ID 1)
+
+## License and Academic Use
+
+This software is provided for bioinformatics research and academic purposes.
+
+## Related Work and References
+
+The application implements standard molecular biology algorithms:
+- Sequence comparison (Needleman-Wunsch, Smith-Waterman variants)
+- Codon substitution matrices
+- Statistical analysis of sequence motifs
+
+---
+
+**Version**: February 2026
+
+**Repository**: https://github.com/r1gron9/biosec-toolkit
+
+**Inquiries**: Submit issues through GitHub repository
+
+## Core Functionality
+
+### Sequence Optimization with Motif Injection
+
+The primary function of this software is to optimize DNA sequences through codon substitution while inserting the ATTATA hexanucleotide motif. The system employs three distinct algorithmic strategies based on codon flexibility constraints.
+
+Key features:
+- Insertion of ATTATA promoter elements into DNA sequences
+- Complete preservation of encoded protein sequences
+- Three distinct injection strategies optimized for different codon contexts
+- Detailed tracking of all genetic modifications
+
+### Comparative Sequence Analysis
+
+Provides triplet-level sequence comparison functionality with
+- Position-by-position nucleotide comparison
+- Analysis of reverse complement sequences
+- Regulatory motif identification in complementary regions
+
+### Promoter Region Analysis
+
+Enables systematic search for ATTATA motifs within gene promoter regions:
+- Integration of genomic sequence data (FASTA format)
+- Gene location specification (CSV format)
+- Statistical analysis of motif occurrence probability
+- Complete positional mapping of identified sequences
+
+### Motif Distribution Analysis
+
+Database-wide analysis of ATTATA occurrence patterns:
+- Duplicate sequence identification and reporting
+- Occurrence frequency calculation at multiple biological scales
+- Probability assessment for nucleotide and sequence levels
+- Comprehensive analysis report generation
+
+### Synthetic Sequence Generation
+
+Controlled generation of test sequences:
+- Realistic synthetic DNA sequence creation
+- Multi-case ATTATA injection scenario simulation
+- CSV export format for downstream analysis
 
 ## 📊 Technical Stack
 
