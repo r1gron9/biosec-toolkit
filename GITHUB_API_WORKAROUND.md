@@ -1,21 +1,34 @@
 # GitHub API 404 Workaround
 
 ## Issue
-If you see "404 Not Found" errors when trying to access queries folder from GitHub API, this is a temporary indexing delay issue. All files ARE present in the repository.
+If you see "404 Not Found" errors from GitHub API when opening Colab, this is because Colab's initialization tries to fetch the `queries` folder listing via the GitHub API, which has a temporary indexing delay.
 
-## Quick Fix: Use Direct Colab Link
+**Important: The git clone itself works fine.** The error is cosmetic - just ignore it or use one of the working methods below.
 
-The safest method - opens the notebook directly from GitHub (no API calls):
+## Best Solution: Use Simple Colab Notebook
+
+This minimal version avoids the API issue entirely:
+
+```
+https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_simple.ipynb
+```
+
+**Features:**
+- One-click setup
+- Avoids GitHub API calls
+- Works immediately
+- Minimal, clean interface
+- Full functionality
+
+## Alternative: Original Colab Notebook
+
+If you prefer the detailed notebook with explanations:
 
 ```
 https://colab.research.google.com/github/r1gron9/biosec-toolkit/blob/main/queries/colab_notebook.ipynb
 ```
 
-Click this link and it will:
-1. Open Google Colab interface
-2. Load the notebook from GitHub
-3. Run the setup automatically
-4. No API calls needed
+**If you see API errors:** The error is in Colab's background initialization trying to fetch folder metadata. The actual git clone works fine - just continue and run the cells. The notebook will work correctly.
 
 ## Alternative: Docker
 
