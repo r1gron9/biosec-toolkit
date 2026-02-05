@@ -76,7 +76,7 @@ def example_2_search_promoter_motif():
         print(f"Total positions searched: {result['total_searches']}")
         print(f"Found indices (first 10): {result['indices'][:10] if result['indices'] else 'None'}")
     else:
-        print_subheader("⚠️  Example Files Not Found")
+        print_subheader("[!] Example Files Not Found")
         print(f"Place example files in the 'examples/' directory:")
         print(f"  - {csv_path}")
         print(f"  - {fasta_path}")
@@ -107,16 +107,16 @@ def example_3_search_motif_quantity():
         print_subheader("Generated Output Files")
         if os.path.exists("cleaned_database.csv"):
             df_clean = pd.read_csv("cleaned_database.csv")
-            print(f"✓ cleaned_database.csv ({len(df_clean)} sequences)")
+            print(f"[OK] cleaned_database.csv ({len(df_clean)} sequences)")
         
         if os.path.exists("duplicates_report.csv"):
             df_dupes = pd.read_csv("duplicates_report.csv")
             if len(df_dupes) > 0:
-                print(f"✓ duplicates_report.csv ({len(df_dupes)} duplicates found)")
+                print(f"[OK] duplicates_report.csv ({len(df_dupes)} duplicates found)")
             else:
-                print(f"✓ duplicates_report.csv (No duplicates found)")
+                print(f"[OK] duplicates_report.csv (No duplicates found)")
     else:
-        print_subheader("⚠️  Example File Not Found")
+        print_subheader("[!] Example File Not Found")
         print(f"Place example file in 'examples/' directory:")
         print(f"  - {csv_path}")
 
@@ -136,8 +136,8 @@ def example_4_generate_test_file():
     print_subheader("Results")
     if os.path.exists(output_path):
         df = pd.read_csv(output_path)
-        print(f"✓ Generated {len(df)} sequences")
-        print(f"✓ Saved to: {output_path}")
+        print(f"[OK] Generated {len(df)} sequences")
+        print(f"[OK] Saved to: {output_path}")
         print(f"\nColumns: {', '.join(df.columns.tolist())}")
         print(f"\nFirst sequence:")
         first_row = df.iloc[0]
@@ -145,7 +145,7 @@ def example_4_generate_test_file():
         print(f"  Protein Length: {len(first_row['protein_sequence'])} aa")
         print(f"  Expected Cases: {first_row['expected_case']}")
     else:
-        print("❌ Generation failed")
+        print("[FAIL] Generation failed")
 
 
 def example_5_inject_motif():
@@ -175,8 +175,8 @@ def example_5_inject_motif():
     print_subheader("Results")
     if os.path.exists(output_path):
         df_inject = pd.read_csv(output_path)
-        print(f"✓ Successfully processed {len(df_inject)} sequences")
-        print(f"✓ Saved to: {output_path}")
+        print(f"[OK] Successfully processed {len(df_inject)} sequences")
+        print(f"[OK] Saved to: {output_path}")
         
         print(f"\nFirst modified sequence preview:")
         first = df_inject.iloc[0]
@@ -184,7 +184,7 @@ def example_5_inject_motif():
         print(f"  Modified DNA length: {len(first['Modified DNA'])} bp")
         print(f"  Number of insertions: {first['Num Insertions']}")
     else:
-        print("❌ Injection failed")
+        print("[FAIL] Injection failed")
 
 
 def workflow_complete_pipeline():
@@ -198,7 +198,7 @@ def workflow_complete_pipeline():
     print("Creating 100 synthetic sequences...")
     generate_test_file.generate_test_file(100, test_file)
     df_test = pd.read_csv(test_file)
-    print(f"✓ Created {len(df_test)} sequences")
+    print(f"[OK] Created {len(df_test)} sequences")
     
     # Step 2: Inject motif
     print_subheader("Step 2: Inject ATTATA Motif")
@@ -206,7 +206,7 @@ def workflow_complete_pipeline():
     injected_file = "workflow_injected_sequences.csv"
     inject_motif.process_csv(test_file, injected_file)
     df_injected = pd.read_csv(injected_file)
-    print(f"✓ Modified {len(df_injected)} sequences")
+    print(f"[OK] Modified {len(df_injected)} sequences")
     
     # Step 3: Prepare data for analysis (convert column names for compatibility)
     print_subheader("Step 3: Prepare Data for Analysis")
@@ -224,7 +224,7 @@ def workflow_complete_pipeline():
     df_compatible[['Serial', 'Id', 'predicted_dna', 'protein_sequence', 'organism_name']].to_csv(
         analysis_file, index=False
     )
-    print(f"✓ Prepared data for analysis")
+    print(f"[OK] Prepared data for analysis")
     
     # Step 4: Analyze results
     print_subheader("Step 4: Analyze Motif Distribution")
@@ -239,7 +239,7 @@ def workflow_complete_pipeline():
     print(f"Probability per sequence: {results['prob_sequence']}")
     
     print_subheader("Workflow Complete")
-    print(f"✓ All outputs saved in current directory")
+    print(f"[OK] All outputs saved in current directory")
 
 
 def main():
@@ -259,12 +259,12 @@ def main():
         workflow_complete_pipeline()
         
         print_header("ALL EXAMPLES COMPLETED SUCCESSFULLY")
-        print("\n✓ Check the generated CSV files and reports in your working directory")
-        print("✓ For interactive examples, run: jupyter notebook queries_examples.ipynb")
-        print("✓ For more details, see: README.md in the queries/ directory\n")
+        print("\n[OK] Check the generated CSV files and reports in your working directory")
+        print("[OK] For interactive examples, run: jupyter notebook queries_examples.ipynb")
+        print("[OK] For more details, see: README.md in the queries/ directory\n")
         
     except Exception as e:
-        print(f"\n❌ Error occurred: {str(e)}")
+        print(f"\n[ERROR] Error occurred: {str(e)}")
         import traceback
         traceback.print_exc()
         sys.exit(1)
