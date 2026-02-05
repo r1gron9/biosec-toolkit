@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Test File For Injection Promoter Motif</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Generate Test File For Injection Promoter Motif</h1>
+    <div class="description-box">
+        <p>This tool creates a test dataset of DNA sequences for evaluating the possibility
+            of injecting a <strong>'TATAAT'</strong> promoter motif into the complementary strand. More of the sequence
+            includes one or more insertable motif positions and labels them as Case 1, 2, or 3.
+        </p>
+
+        <form method="post">
+            <label for="num_sequences">Number of sequences to generate:</label>
+            <input type="number" id="num_sequences" name="num_sequences" value="50" min="1" required>
+            <button type="submit" class="styled-button">Start Generate</button>
+        </form>
+
+
+    </div>
+    <br>
+    <a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+
+</div>
+</body>
+</html>

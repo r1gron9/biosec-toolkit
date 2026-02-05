@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inject Promoter Motif</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Inject Promoter Motif</h1>
+    <div class="description-box">
+        <p>This tool accepts as input a CSV file with DNA sequences and tests the option of inserting a promoter motif - <strong>"TATAAT"</strong> into them without changing the original protein sequence.
+           The script's output refers both to the percentage of success, and to the success for each specific sequence using a CSV file that is downloaded as output and analyzes in which sequences the insertion attempt was successful, and in which case and location this happened for those sequences.
+        </p>
+    </div>
+
+    <form action="{{ url_for('inject_motif_route') }}" method="post" enctype="multipart/form-data">
+        <label>Upload CSV file:</label>
+        <input type="file" name="csv_file" required>
+        <a href="{{ url_for('download_example_multiple_sequences_route') }}" class="button">Download Example For CSV File</a>
+        <br><br><br>
+        <button type="submit">Injection Attempt</button>
+    </form>
+
+    {% if results %}
+        <h2>Results</h2>
+        <p><strong>Total Sequences:</strong> {{ results.total_sequences }}</p>
+        <p><strong>Sequences with existing motif:</strong> {{ results.sequences_with_existing_motif }} ({{ results.prob_sequences_with_existing_motif }}%)</p>
+        <p><strong>Sequences without motif:</strong> {{ results.sequences_without_motif }} ({{ results.prob_sequences_without_motif }}%)</p>
+        <p><strong>Sequences where injection was possible:</strong> {{ results.sequences_insertion_possible }} ({{ results.prob_sequences_insertion_possible }}%)</p>
+    {% endif %}
+
+    {% if output_filename %}
+        <a href="{{ url_for('download_inject_output_route') }}" class="button">Download Output CSV</a>
+    {% endif %}
+    <br><br>
+    <a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+
+</div>
+</body>
+</html>

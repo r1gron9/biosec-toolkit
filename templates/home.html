@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Bio DNA Sequences{% endblock %}
+
+{% block content %}
+    <h2>Select a Functionality:</h2>
+    <div class="tool-container">
+    <a href="{{ url_for('compare_sequences_route') }}" class="tool-link">
+        <div class="tool-box">Compare DNA Sequences</div>
+    </a>
+    <a href="{{ url_for('search_promoter_motif_route') }}" class="tool-link">
+        <div class="tool-box">Search Promoter Motif In Full Genome</div>
+    </a>
+    <a href="{{ url_for('search_motifs_quantity_route') }}" class="tool-link">
+        <div class="tool-box">Search Promoter Motif In Multiple Sequences</div>
+    </a>
+    <a href="{{ url_for('inject_motif_route') }}" class="tool-link">
+        <div class="tool-box">Inject Promoter Motif</div>
+    </a>
+</div>
+
+    <h2>Advanced:</h2>
+    <div class="tool-container">
+    <a href="{{ url_for('generate_test_file_route') }}" class="tool-link">
+        <div class="tool-box">Generate Test File For Injection Promoter Motif</div>
+    </a>
+    </div>
+{% endblock %}
