@@ -1,5 +1,19 @@
 from Bio.Seq import Seq
 
+def compare_seq(seq1, seq2):
+    """Simple sequence comparison - count differences"""
+    seq1 = str(seq1).upper()
+    seq2 = str(seq2).upper()
+    min_len = min(len(seq1), len(seq2))
+    differences = sum(1 for i in range(min_len) if seq1[i] != seq2[i])
+    differences += abs(len(seq1) - len(seq2))
+    return {
+        "differences": differences,
+        "seq1_length": len(seq1),
+        "seq2_length": len(seq2)
+    }
+
+
 def display_results(sequence1, sequence2, optimizer1, optimizer2):
     seq1 = Seq(sequence1.upper().replace(" ", ""))
     seq2 = Seq(sequence2.upper().replace(" ", ""))
