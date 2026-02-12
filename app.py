@@ -107,4 +107,4 @@ def download_example_multiple_sequences_route():
     return send_file(example_path, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='biosec.app', port=80)
