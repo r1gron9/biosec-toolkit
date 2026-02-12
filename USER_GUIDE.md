@@ -11,7 +11,7 @@ This guide explains how to use biosec-toolkit without needing to write code.
 1. Open PowerShell or Command Prompt
 2. Navigate to the project folder:
 ```bash
-cd c:\Users\legion\Downloads\bio_dna_sequences-FullProductWithExe\bio_dna_sequences
+cd path/to/bio_dna_sequences
 ```
 
 3. Start the web server:
@@ -75,7 +75,7 @@ pip install jupyter
 
 ### Run It
 ```bash
-cd c:\Users\legion\Downloads\bio_dna_sequences-FullProductWithExe\bio_dna_sequences\queries
+cd queries/
 jupyter notebook queries_examples.ipynb
 ```
 
@@ -92,7 +92,7 @@ Don't want to use the web interface? Use the CLI:
 
 ### Run It
 ```bash
-cd c:\Users\legion\Downloads\bio_dna_sequences-FullProductWithExe\bio_dna_sequences\queries
+cd queries/
 python run_queries.py
 ```
 
