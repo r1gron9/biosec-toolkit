@@ -6,6 +6,25 @@ DNA sequence optimization through intelligent codon substitution. Insert ATTATA 
 
 ---
 
+## About This Project
+
+**biosec-toolkit** addresses a critical cyber-biosecurity vulnerability in DNA design pipelines. Codon optimization is essential for improving protein expression in synthetic biology and biotechnology, but conventional approaches focus only on forward-strand translation efficiency. This toolkit reveals that:
+
+- Codon optimization can inadvertently introduce antisense promoter motifs on the complementary DNA strand
+- 'ATTATA' motifs can be silently injected into sequences without altering the encoded protein
+- Motifs can be deliberately injected for research or security testing purposes
+
+By combining motif detection, silent injection algorithms, and genomic analysis, **biosec-toolkit** enables researchers to understand and defend against this vulnerability.
+
+### Authors
+
+**Elad Carmi**¹, **Roni Glikman**¹, **Yuval Dorfan**¹*
+
+¹Faculty of Electrical Engineering, Holon Institute of Technology  
+*Corresponding author: [dorfany@gmail.com]
+
+---
+
 ## Quick Start
 
 ### Cloud (No Installation)
