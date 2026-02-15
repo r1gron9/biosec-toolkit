@@ -176,12 +176,6 @@ GCTAGCTAGCT
 
 ---
 
-## License
-
-MIT
-
----
-
 ## Links
 
 - **Repository:** https://github.com/r1gron9/biosec-toolkit
