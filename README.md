@@ -15,10 +15,12 @@ DNA sequence optimization through intelligent codon substitution. Insert ATTATA 
 ```bash
 git clone https://github.com/r1gron9/biosec-toolkit.git
 cd biosec-toolkit
-pip install -r requirements.txt
+py -m pip install -r requirements.txt
 python app.py
 ```
 Open browser: **http://localhost:5000**
+
+**Note:** If `py` command doesn't work, try `python -m pip install -r requirements.txt` instead.
 
 ---
 
@@ -45,9 +47,18 @@ cd biosec-toolkit
 ```
 
 2. Install dependencies:
+
+**Option A** (Try this first - recommended for Windows):
 ```bash
-pip install -r requirements.txt
+py -m pip install -r requirements.txt
 ```
+
+**Option B** (If Option A doesn't work):
+```bash
+python -m pip install -r requirements.txt
+```
+
+**Note:** On Windows, `py` is the default Python launcher. If `py` doesn't work, try `python` instead.
 
 3. Start the application:
 ```bash
