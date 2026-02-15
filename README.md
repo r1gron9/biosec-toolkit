@@ -61,6 +61,13 @@ python -m pip install -r requirements.txt
 **Note:** On Windows, `py` is the default Python launcher. If `py` doesn't work, try `python` instead.
 
 3. Start the application:
+
+**Option A** (Try this first):
+```bash
+py app.py
+```
+
+**Option B** (If Option A doesn't work):
 ```bash
 python app.py
 ```
